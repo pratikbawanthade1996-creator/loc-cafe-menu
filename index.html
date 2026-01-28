@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOC – Life of Chai | QR Menu</title>
+<style>
+:root{
+  --bg:#f9f4ef;
+  --card:#ffffff;
+  --chai:#8b5a2b;
+  --accent:#d4a373;
+  --text:#3a2f2a;
+  --muted:#7a6f68;
+  --shadow:0 6px 16px rgba(0,0,0,0.08);
+  --radius:14px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+  background:var(--bg);
+  color:var(--text);
+}
+header{
+  text-align:center;
+  padding:16px 12px 8px;
+  font-weight:700;
+  font-size:20px;
+  color:var(--chai);
+}
+.tabs{
+  position:sticky;
+  top:0;
+  background:var(--bg);
+  padding:10px 8px;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  z-index:10;
+}
+.tabs a{
+  flex:0 0 auto;
+  padding:8px 14px;
+  background:#fff;
+  border-radius:20px;
+  text-decoration:none;
+  color:var(--text);
+  font-size:14px;
+  box-shadow:var(--shadow);
+  white-space:nowrap;
+}
+section{
+  margin:18px 12px;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+section h2{
+  margin:0;
+  padding:14px;
+  background:#fff7ef;
+  color:var(--chai);
+  font-size:18px;
+}
+section img{
+  width:100%;
+  display:block;
+}
+.menu{
+  padding:12px 14px 16px;
+}
+.item{
+  display:flex;
+  justify-content:space-between;
+  padding:8px 0;
+  border-bottom:1px dashed #eee;
+  font-size:14px;
+}
+.item:last-child{border-bottom:none}
+.price{color:var(--muted)}
+
+.hero-cover{
+  width:100%;
+  margin:0 0 12px;
+  border-radius:0 0 22px 22px;
+  overflow:hidden;
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+.hero-cover img{
+  width:100%;
+  height:auto;        /* ⭐ MOST IMPORTANT */
+  display:block;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<header>LOC – Life of Chai ☕</header>
+
+<div class="hero-cover">
+  <img src="images/cover.jpg" alt="LOC – Life of Chai Cover">
+</div>
+
+
+
+<nav class="tabs">
+  <a href="#chai">Chai</a>
+  <a href="#coffee">Coffee</a>
+  <a href="#vada-pav">Vada Pav</a>
+  <a href="#small-bites">Small Bites</a>
+  <a href="#maggi">Maggi & Pasta</a>
+  <a href="#sandwiches">Sandwiches</a>
+  <a href="#burgers">Burgers</a>
+  <a href="#buns">Buns & Breads</a>
+  <a href="#shakes">Shakes</a>
+  <a href="#coolers">Coolers</a>
+  <a href="#desserts">Desserts</a>
+  <a href="#combos">Combos</a>
+  <a href="#seasonal">Seasonal</a>
+</nav>
+
+<section id="chai">
+  <h2>Chai</h2>
+  <img src="images/chai.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span><strong>☕ Chai (Base)</strong></span><span></span></div>
+
+    <div class="item"><span>Adrak Chai</span><span class="price">₹12</span></div>
+    <div class="item"><span>Elaichi Chai</span><span class="price">₹12</span></div>
+    <div class="item"><span>Mix Chai</span><span class="price">₹12</span></div>
+
+    <div class="item"><span><strong>🌿 Special Chai</strong></span><span></span></div>
+
+    <div class="item"><span>Masala Chai</span><span class="price"></span></div>
+    <div class="item"><span>Mara-Mari Chai</span><span class="price">₹12</span></div>
+    <div class="item"><span>Vanilla Chai</span><span class="price">₹20</span></div>
+    <div class="item"><span>Chocolate Chai</span><span class="price">₹20</span></div>
+    <div class="item"><span>Rose Chai</span><span class="price">₹20</span></div>
+    <div class="item"><span>Gudh Chai</span><span class="price">₹20</span></div>
+    <div class="item"><span>Lemon Tea</span><span class="price">₹20</span></div>
+    <div class="item"><span>Green Tea</span><span class="price">₹20</span></div>
+    <div class="item"><span>Sugar Free Tea</span><span class="price">₹15</span></div>
+    <div class="item"><span>Black Tea</span><span class="price">₹12</span></div>
+    <div class="item"><span>Kulhad Chai</span><span class="price">₹15</span></div>
+    <div class="item"><span>Garam Dudh</span><span class="price">₹40</span></div>
+
+  </div>
+</section>
+
+
+<section id="coffee">
+  <h2>Coffee & Hot Beverages</h2>
+  <img src="images/coffee.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span>Coffee</span><span class="price">₹30</span></div>
+    <div class="item"><span>Strong Coffee</span><span class="price">₹35</span></div>
+    <div class="item"><span>Black Coffee</span><span class="price">₹20</span></div>
+    <div class="item"><span>Hazelnut Black Coffee</span><span class="price">₹25</span></div>
+    <div class="item"><span>Classic Coffee</span><span class="price">₹30</span></div>
+
+    <div class="item"><span>Bournvita Milk</span><span class="price">₹30</span></div>
+
+    <div class="item"><span>Butterscotch Coffee</span><span class="price">₹35</span></div>
+    <div class="item"><span>Caramel Coffee</span><span class="price">₹35</span></div>
+    <div class="item"><span>Hazelnut Coffee</span><span class="price">₹35</span></div>
+    <div class="item"><span>Vanilla Coffee</span><span class="price">₹35</span></div>
+    <div class="item"><span>Dark Chocolate Coffee</span><span class="price">₹35</span></div>
+
+    <div class="item"><span>Hot Chocolate</span><span class="price">₹35</span></div>
+
+  </div>
+</section>
+
+
+<section id="vada-pav">
+  <h2>Vada Pav</h2>
+  <img src="images/vada-pav.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span><strong>🔸 Classic Vada Pav</strong></span><span></span></div>
+    <div class="item"><span>Classic Vada Pav</span><span class="price">₹35</span></div>
+    <div class="item"><span>Grilled Classic Vada Pav</span><span class="price">₹40</span></div>
+    <div class="item"><span>Classic Cheese Vada Pav</span><span class="price">₹50</span></div>
+
+    <div class="item"><span><strong>🔸 Veg Crispy Vada Pav</strong></span><span></span></div>
+    <div class="item"><span>Veg Crispy Vada Pav</span><span class="price">₹40</span></div>
+    <div class="item"><span>Grilled Veg Crispy Vada Pav</span><span class="price">₹45</span></div>
+    <div class="item"><span>Veg Crispy Cheese Vada Pav</span><span class="price">₹55</span></div>
+
+    <div class="item"><span><strong>🔸 Veg Cutlet Vada Pav</strong></span><span></span></div>
+    <div class="item"><span>Veg Cutlet Vada Pav</span><span class="price">₹40</span></div>
+    <div class="item"><span>Grilled Veg Cutlet Vada Pav</span><span class="price">₹45</span></div>
+    <div class="item"><span>Veg Cutlet Cheese Vada Pav</span><span class="price">₹55</span></div>
+
+    <div class="item"><span><strong>🔸 Schezwan Vada Pav</strong></span><span></span></div>
+    <div class="item"><span>Schezwan Vada Pav</span><span class="price">₹40</span></div>
+    <div class="item"><span>Grilled Schezwan Vada Pav</span><span class="price">₹45</span></div>
+    <div class="item"><span>Cheese Schezwan Vada Pav</span><span class="price">₹55</span></div>
+
+    <div class="item"><span><strong>🔸 Makai Palak Vada Pav</strong></span><span></span></div>
+    <div class="item"><span>Makai Palak Vada Pav</span><span class="price">₹50</span></div>
+    <div class="item"><span>Grilled Makai Palak Vada Pav</span><span class="price">₹49</span></div>
+    <div class="item"><span>Makai Palak Cheese Vada Pav</span><span class="price">₹59</span></div>
+
+    <div class="item"><span><strong>🔸 Cheese Burst Vada Pav</strong></span><span></span></div>
+    <div class="item"><span>Cheese Burst Vada Pav</span><span class="price">₹75</span></div>
+    <div class="item"><span>Grilled Cheese Burst Vada Pav</span><span class="price">₹79</span></div>
+    <div class="item"><span>Double Cheese Burst Vada Pav</span><span class="price">₹89</span></div>
+
+    <div class="item"><span><strong>🔸 Paneer Italian Vada Pav</strong></span><span></span></div>
+    <div class="item"><span>Paneer Italian Vada Pav</span><span class="price">₹85</span></div>
+    <div class="item"><span>Grilled Paneer Italian Vada Pav</span><span class="price">₹89</span></div>
+    <div class="item"><span>Paneer Italian Cheese Vada Pav</span><span class="price">₹99</span></div>
+
+    <div class="item"><span><strong>➕ Add-On</strong></span><span></span></div>
+    <div class="item"><span>Extra Mayo Dip</span><span class="price">₹10</span></div>
+
+  </div>
+</section>
+
+
+<section id="small-bites">
+  <h2>Small Bites</h2>
+  <img src="images/small-bites.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span>Sabudana Vada</span><span class="price">₹50</span></div>
+    <div class="item"><span>Hara Bhara Kabab</span><span class="price">₹60</span></div>
+
+    <div class="item"><span>Regular Fries</span><span class="price">₹60</span></div>
+    <div class="item"><span>Peri-Peri Fries</span><span class="price">₹70</span></div>
+    <div class="item"><span>Masala Fries</span><span class="price">₹80</span></div>
+    <div class="item"><span>Potato Wedges</span><span class="price">₹80</span></div>
+
+    <div class="item"><span>Veg Spring Roll</span><span class="price">₹80</span></div>
+    <div class="item"><span>Mini Bombay Samosa</span><span class="price">₹80</span></div>
+
+    <div class="item"><span>Cheese Balls</span><span class="price">₹90</span></div>
+    <div class="item"><span>Cheese Pizza Samosa</span><span class="price">₹100</span></div>
+
+  </div>
+</section>
+
+
+<section id="maggi">
+  <h2>Maggi, Oats & Pasta</h2>
+  <img src="images/maggi-pasta.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span><strong>🍜 Maggi</strong></span><span></span></div>
+    <div class="item"><span>Masala Maggi</span><span class="price">₹50</span></div>
+    <div class="item"><span>Veggie Maggi</span><span class="price">₹60</span></div>
+    <div class="item"><span>Tadka Maggi</span><span class="price">₹80</span></div>
+    <div class="item"><span>Peri-Peri Maggi</span><span class="price">₹80</span></div>
+    <div class="item"><span>Cheese Corn Maggi</span><span class="price">₹80</span></div>
+    <div class="item"><span>Paneer Maggi</span><span class="price">₹90</span></div>
+    <div class="item"><span>LOC Special Maggi</span><span class="price">₹90</span></div>
+
+    <div class="item"><span><strong>🥣 Oats</strong></span><span></span></div>
+    <div class="item"><span>Masala Oats</span><span class="price">₹60</span></div>
+    <div class="item"><span>Peri-Peri Oats</span><span class="price">₹60</span></div>
+    <div class="item"><span>Cheese Corn Oats</span><span class="price">₹70</span></div>
+
+    <div class="item"><span><strong>🍝 Pasta</strong></span><span></span></div>
+    <div class="item"><span>White Sauce Pasta</span><span class="price">₹100</span></div>
+    <div class="item"><span>Extra Cheese</span><span class="price">₹20</span></div>
+
+  </div>
+</section>
+
+
+<section id="sandwiches">
+  <h2>Sandwiches</h2>
+  <img src="images/sandwiches.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span>Veg Cheese Sandwich</span><span class="price">₹120</span></div>
+    <div class="item"><span>Spinach Corn Sandwich</span><span class="price">₹120</span></div>
+    <div class="item"><span>Tandoori Paneer Sandwich</span><span class="price">₹150</span></div>
+    <div class="item"><span>Makhani Paneer Sandwich</span><span class="price">₹150</span></div>
+    <div class="item"><span>Tikka Paneer Sandwich</span><span class="price">₹150</span></div>
+    <div class="item"><span>Mac & Cheese Sandwich</span><span class="price">₹150</span></div>
+
+  </div>
+</section>
+
+
+<section id="burgers">
+  <h2>Burgers</h2>
+  <img src="images/burgers.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span>Veg Tikki Cheese Burger</span><span class="price">₹100</span></div>
+    <div class="item"><span>Italian Paneer Cheese Burger</span><span class="price">₹130</span></div>
+    <div class="item"><span>Cheese Delight Burger</span><span class="price">₹130</span></div>
+
+  </div>
+</section>
+
+
+<section id="buns">
+  <h2>Buns & Breads</h2>
+  <img src="images/buns-breads.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span>Cream Roll</span><span class="price">₹15</span></div>
+    <div class="item"><span>Bun Maska</span><span class="price">₹25</span></div>
+    <div class="item"><span>Bun Maska Jam</span><span class="price">₹35</span></div>
+    <div class="item"><span>Bun Maska Chocolate</span><span class="price">₹35</span></div>
+    <div class="item"><span>Cheese Grilled Bun Maska</span><span class="price">₹40</span></div>
+
+    <div class="item"><span>Butter Toast</span><span class="price">₹20</span></div>
+    <div class="item"><span>Butter Jam Toast</span><span class="price">₹30</span></div>
+    <div class="item"><span>Peanut Butter Toast</span><span class="price">₹35</span></div>
+    <div class="item"><span>Cheese Grilled Butter Toast</span><span class="price">₹35</span></div>
+
+    <div class="item"><span>Butter Cookies</span><span class="price">₹20</span></div>
+
+  </div>
+</section>
+
+
+<section id="shakes">
+  <h2>Shakes</h2>
+  <img src="images/shakes.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span>Cold Coffee</span><span class="price">₹80</span></div>
+    <div class="item"><span>Hazelnut Cold Coffee</span><span class="price">₹90</span></div>
+    <div class="item"><span>Oreo Shake</span><span class="price">₹90</span></div>
+    <div class="item"><span>Kit-Kat Shake</span><span class="price">₹100</span></div>
+    <div class="item"><span>Brownie Shake</span><span class="price">₹100</span></div>
+    <div class="item"><span>Nutella Shake</span><span class="price">₹100</span></div>
+
+  </div>
+</section>
+
+
+<section id="coolers">
+  <h2>Coolers & Mocktails</h2>
+  <img src="images/coolers-mocktails.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span>Lemon Iced Tea</span><span class="price">₹60</span></div>
+    <div class="item"><span>Peach Iced Tea</span><span class="price">₹60</span></div>
+    <div class="item"><span>Strawberry Iced Tea</span><span class="price">₹50</span></div>
+
+    <div class="item"><span>Chilli Guava Mojito</span><span class="price">₹60</span></div>
+    <div class="item"><span>Spicy Mango Mojito</span><span class="price">₹60</span></div>
+    <div class="item"><span>Virgin Mojito</span><span class="price">₹60</span></div>
+
+    <div class="item"><span>Zafrani Iced Tea</span><span class="price">₹60</span></div>
+    <div class="item"><span>Green Apple Mojito</span><span class="price">₹70</span></div>
+    <div class="item"><span>Watermelon Mint Mojito</span><span class="price">₹70</span></div>
+    <div class="item"><span>Peachy Garden Mojito</span><span class="price">₹80</span></div>
+
+  </div>
+</section>
+
+
+<section id="desserts">
+  <h2>Desserts</h2>
+  <img src="images/desserts.jpg">
+
+  <div class="menu">
+
+    <div class="item"><span>Muffin</span><span class="price">₹60</span></div>
+    <div class="item"><span>Choco Lava Cake</span><span class="price">₹60</span></div>
+    <div class="item"><span>Walnut Brownie</span><span class="price">₹100</span></div>
+
+  </div>
+</section>
+
+
+<section id="combos">
+  <h2>Combos & Deals</h2>
+  <img src="images/combos.jpg">
+
+  <div class="menu">
+
+    <div class="item">
+      <span>LOC Combo<br><small>(Cheese Corn Maggi + Classic Vada Pav + Cheese Balls + Caramel Coffee)</small></span>
+      <span class="price">₹215</span>
+    </div>
+
+    <div class="item">
+      <span>Best Deal Combo<br><small>(Potato Wedges + Oreo Shake + Makai Palak Vada Pav)</small></span>
+      <span class="price">₹205</span>
+    </div>
+
+    <div class="item">
+      <span>Super Delicious Combo<br><small>(Peri-Peri Fries + Oreo / KitKat Shake + Makai Palak Vada Pav)</small></span>
+      <span class="price">₹205</span>
+    </div>
+
+    <div class="item">
+      <span>Budget Chai Combo<br><small>(Potato Wedges + Vanilla Coffee + Bun Maska + Adrak Chai)</small></span>
+      <span class="price">₹135</span>
+    </div>
+
+    <div class="item">
+      <span>Flavour of the Week<br><small>(Veg Crispy Vada Pav + Butter Toast + Masala Chai)</small></span>
+      <span class="price">₹65</span>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="seasonal">
+<h2>Seasonal Special</h2>
+<img src="images/seasonal-special.jpg">
+<div class="menu">
+<div class="item"><span>Musk Melon Drink</span><span class="price">₹30</span></div>
+</div>
+</section>
+
+</body>
+</html>
