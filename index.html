@@ -115,6 +115,34 @@ section {
   scroll-margin-top: 70px;
 }
 
+.menu-group{
+  margin-top:14px;
+  padding:6px 0;
+  font-size:14px;
+  font-weight:600;
+  color:#f5c16c;
+}
+
+.item{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  padding:8px 0;
+  border-bottom:1px dashed rgba(255,255,255,0.12);
+}
+
+.item span:first-child{
+  flex:1;
+  line-height:1.4;
+}
+
+.price{
+  flex-shrink:0;
+  min-width:48px;
+  text-align:right;
+  color:#d1c2a3;
+}
 
 
 </style>
@@ -204,50 +232,51 @@ section {
 
 <section id="vada-pav">
   <h2>Vada Pav</h2>
-  <img src="images/vada-pav.jpg">
+  <img src="images/vada-pav.jpg" alt="Vada Pav">
 
   <div class="menu">
 
-    <div class="item"><span><strong>🔸 Classic Vada Pav</strong></span><span></span></div>
+    <div class="menu-group">🔸 Classic Vada Pav</div>
     <div class="item"><span>Classic Vada Pav</span><span class="price">₹35</span></div>
     <div class="item"><span>Grilled Classic Vada Pav</span><span class="price">₹40</span></div>
     <div class="item"><span>Classic Cheese Vada Pav</span><span class="price">₹50</span></div>
 
-    <div class="item"><span><strong>🔸 Veg Crispy Vada Pav</strong></span><span></span></div>
+    <div class="menu-group">🔸 Veg Crispy Vada Pav</div>
     <div class="item"><span>Veg Crispy Vada Pav</span><span class="price">₹40</span></div>
     <div class="item"><span>Grilled Veg Crispy Vada Pav</span><span class="price">₹45</span></div>
     <div class="item"><span>Veg Crispy Cheese Vada Pav</span><span class="price">₹55</span></div>
 
-    <div class="item"><span><strong>🔸 Veg Cutlet Vada Pav</strong></span><span></span></div>
+    <div class="menu-group">🔸 Veg Cutlet Vada Pav</div>
     <div class="item"><span>Veg Cutlet Vada Pav</span><span class="price">₹40</span></div>
     <div class="item"><span>Grilled Veg Cutlet Vada Pav</span><span class="price">₹45</span></div>
     <div class="item"><span>Veg Cutlet Cheese Vada Pav</span><span class="price">₹55</span></div>
 
-    <div class="item"><span><strong>🔸 Schezwan Vada Pav</strong></span><span></span></div>
+    <div class="menu-group">🔸 Schezwan Vada Pav</div>
     <div class="item"><span>Schezwan Vada Pav</span><span class="price">₹40</span></div>
     <div class="item"><span>Grilled Schezwan Vada Pav</span><span class="price">₹45</span></div>
     <div class="item"><span>Cheese Schezwan Vada Pav</span><span class="price">₹55</span></div>
 
-    <div class="item"><span><strong>🔸 Makai Palak Vada Pav</strong></span><span></span></div>
+    <div class="menu-group">🔸 Makai Palak Vada Pav</div>
     <div class="item"><span>Makai Palak Vada Pav</span><span class="price">₹50</span></div>
     <div class="item"><span>Grilled Makai Palak Vada Pav</span><span class="price">₹49</span></div>
     <div class="item"><span>Makai Palak Cheese Vada Pav</span><span class="price">₹59</span></div>
 
-    <div class="item"><span><strong>🔸 Cheese Burst Vada Pav</strong></span><span></span></div>
+    <div class="menu-group">🔸 Cheese Burst Vada Pav</div>
     <div class="item"><span>Cheese Burst Vada Pav</span><span class="price">₹75</span></div>
     <div class="item"><span>Grilled Cheese Burst Vada Pav</span><span class="price">₹79</span></div>
     <div class="item"><span>Double Cheese Burst Vada Pav</span><span class="price">₹89</span></div>
 
-    <div class="item"><span><strong>🔸 Paneer Italian Vada Pav</strong></span><span></span></div>
+    <div class="menu-group">🔸 Paneer Italian Vada Pav</div>
     <div class="item"><span>Paneer Italian Vada Pav</span><span class="price">₹85</span></div>
     <div class="item"><span>Grilled Paneer Italian Vada Pav</span><span class="price">₹89</span></div>
     <div class="item"><span>Paneer Italian Cheese Vada Pav</span><span class="price">₹99</span></div>
 
-    <div class="item"><span><strong>➕ Add-On</strong></span><span></span></div>
+    <div class="menu-group">➕ Add-On</div>
     <div class="item"><span>Extra Mayo Dip</span><span class="price">₹10</span></div>
 
   </div>
 </section>
+
 
 
 <section id="small-bites">
